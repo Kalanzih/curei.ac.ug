@@ -1,0 +1,28 @@
+<html>
+<head>
+   <title>Darken Image using CSS overlay with semi-transparent color</title>
+   <style>
+      .darken-image {
+         position: relative;
+         display: inline-block;
+      }
+      .darken-image img {
+         display: block;
+      }
+      .darken-image .overlay {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background-color: rgba(0, 0, 0, 0.5); /* black with 50% opacity */
+      }
+   </style>
+</head>
+<body>
+   <div class="darken-image">
+      <img src="https://cdn.pixabay.com/photo/2022/06/27/18/56/grass-7288141__340.jpg">
+      <div class="overlay"></div>
+   </div>
+</body>
+</html>
